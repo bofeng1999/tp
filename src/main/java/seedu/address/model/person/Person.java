@@ -22,17 +22,19 @@ public class Person {
 
     // Data fields
     private final Address address;
+    private final Remark remark;
     private final Set<Tag> notes = new HashSet<>();
 
     /**
      * Every field must be present and not null.
      */
-    public Person(Name name, Phone phone, Email email, Address address, Set<Tag> notes) {
-        requireAllNonNull(name, phone, email, address, notes);
+    public Person(Name name, Phone phone, Email email, Address address, Remark remark, Set<Tag> notes) {
+        requireAllNonNull(name, phone, email, address, remark, notes);
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
+        this.remark = remark;
         this.notes.addAll(notes);
     }
 
@@ -50,6 +52,10 @@ public class Person {
 
     public Address getAddress() {
         return address;
+    }
+
+    public Remark getRemark() {
+        return remark;
     }
 
     /**
@@ -98,7 +104,7 @@ public class Person {
     @Override
     public int hashCode() {
         // use this method for custom fields hashing instead of implementing your own
-        return Objects.hash(name, phone, email, address, notes);
+        return Objects.hash(name, phone, email, address, remark, notes);
     }
 
     @Override
