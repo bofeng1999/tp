@@ -102,6 +102,7 @@ public class Person {
         if (this.status == status.REJECTED) {
             return false;
         } else {
+            this.status = status.REJECTED;
             return true;
         }
     }
