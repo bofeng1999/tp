@@ -386,10 +386,10 @@ What you should expect to find:
 
 
 <div markdown="span" class="alert alert-info" role="alert">:information_source: <strong>Note:</strong> <br>
-* For each command, "Format" indicates the syntax of the command.
-* Square brackets indicates an optional [[ parameter ]].
-* In most commands, if the same parameter is repeated and only one is required, we take the last value provided. 
-</div>
+<ul> For each command, "Format" indicates the syntax of the command. </ul> 
+<ul> Square brackets indicates an optional parameter. </ul> 
+<ul> In most commands, if the same parameter is repeated and only one is required, we take the last value provided. 
+</ul> </div>
 
 ### Applicant Commands
 
@@ -408,8 +408,8 @@ What you should expect to find:
 
 
 <div markdown="span" class="alert alert-info" role="alert">:information_source: <strong>Note:</strong> <br>
-* If two or more values of the same parameter are provided, only the last value for that parameter will be taken. 
-</div>
+<ul> If two or more values of the same parameter are provided, only the last value for that parameter will be taken.
+</ul> </div>
 
 
 **Example:**
