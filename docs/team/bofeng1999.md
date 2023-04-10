@@ -129,11 +129,17 @@ Here are the list of all applicants:
 
 - **Community**:
 
-  - Reviewed most PRs and give effective comments.
+  - Reviewed PRs and give effective comments.
   
   - Helped Dun Liang in debugging NullPointerException.
+  
+  - Assigned issues to teammates
 
 - **Tools**:
 
-  - to be added soon
+  - Git and Github
+  
+  - Sourcetree
+  
+  - Java
 
