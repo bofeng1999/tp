@@ -24,73 +24,11 @@ title: <Li Bo Feng> Project Portfolio Page
 - Implemented `NamePhoneNumberPredicate` class to allow `advance`, `reject` and `find` features to access the Applicant 
   by the `name` and `phone`
 
-Example Input: `advance n/John Doe p/91918153`,
-
->Original List:
-```
-Here are the list of all applicants:
-1. John Doe (Applied) 91918153 
-2. Jane Doe (Shortlisted) 98762345
-3. Joe Doe (Accepted) 91234321
-```
-Example Output:
-```
-Successfully advanced John Doe
-
-
-Here are the list of all applicants:
-1. John Doe (Shortlisted) 91918153 
-2. Jane Doe (Accepted) 98762345
-```
-
 - Implemented `advance` feature to advance applicants' status from `Applied` -> `Shorlisted` and 
   `Shorlisted` -> `Accepted` to be tracked in HMHero
 
-Example Input: `advance n/John Doe p/91918153`, 
-                `advance n/Jane Doe p/98762345`
-
->Original List:
-```
-Here are the list of all applicants:
-1. John Doe (Applied) 91918153 
-2. Jane Doe (Shortlisted) 98762345
-3. Joe Doe (Accepted) 91234321
-```
-Example Output:
-```
-Successfully advanced John Doe
-Successfully advanced Jane Done
-
-Here are the list of all applicants:
-1. John Doe (Shortlisted) 91918153 
-2. Jane Doe (Accepted) 98762345
-```
-
 - Implemented `reject` feature to reject applicants' status from `Applied`, `Shorlisted` and `Accpted` to `Rejected`
   to be tracked in HMHero
-
-Example Input: `reject n/John Doe p/91918153`, 
-                `reject n/Jane Doe p/98762345`,
-                `reject n/Joe Doe p/91234321`
-
->Original List:
-```
-Here are the list of all applicants:
-1. John Doe (Applied) 91918153 
-2. Jane Doe (Shortlisted) 98762345
-3. Joe Doe (Accepted) 91234321
-```
-Example Output:
-```
-Successfully rejected John Doe
-Successfully rejected Jane Doe
-Successfully rejected Joe Doe
-
-Here are the list of all applicants:
-1. John Doe (Rejected) 91918153 
-2. Jane Doe (Rejected) 98762345
-3. Joe Doe (Rejected) 91234321
-```
 
 (**Code contributions**)
 
